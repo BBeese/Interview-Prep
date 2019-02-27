@@ -64,13 +64,14 @@ class Animal:
 	
 class Cat(Animal):
 	def __init__(self):
-		super().__init__()
+		super().__init__(self)
+		
 	def talk(self):
 		return ("meow")
 		
 class Dog(Animal):
 	def talk(self):
-	    return ("ruff")
+        return ("ruff")
 ```
 
 **Encapsulation** - a mechanism of binding the data member & member function into a single unit known as class. Encapsulation provides a way for abstraction. In OOP the encapsulation is mainly achieved by creating classes, the classes expose public methods and properties. The class is kind of a container or capsule or a cell, which encapsulate the set of methods, attribute and properties to provide its indented functionalities to other classes
@@ -82,17 +83,17 @@ class Car:
 	def __init__(self):
 		self.__update_software()
 		
-	def drive():
+	def drive(self):
 		print('driving')
 		
-	def __update_software():
+	def __update_software(self):
 		print('updating software')
 		
-	c1 = Car()
-	c1.drive()
-	
-	## OUTPUT : updating software \n driving 
-    ## "__" means private variable 
+c1 = Car()
+c1.drive()
+
+## OUTPUT : updating software \n driving 
+## "__" means private variable 
 ```
 
 **Inheritance** - lets programmers create new classes that share some of the attributes of existing classes. This lets us build on previous work without reinventing the wheel.
@@ -174,4 +175,9 @@ print(c.getName())
 **Greedy:** 
 
 **Dynamic Programming:**
+
+## Questions? 
+-  “Thinking back to people you’ve seen do this work previously, what differentiated the ones who were good from the ones who were really great at it?”
+-  “What do you like about working here?” 
+
 
