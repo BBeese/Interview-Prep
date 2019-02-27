@@ -221,7 +221,8 @@ class Stack (object):
     return (len(self.stack) == 0)
 
   def size (self):
-    return (len(self.stack))```
+    return (len(self.stack))
+```
 
 **Queue:** first in, first out (FIFO) 
 ```python
@@ -240,7 +241,7 @@ class Queue (object):
 
   def size (self):
     return len (self.queue)
-   ```
+ ```
 
 **Tree:** an undirected, connected, acyclic graph 
 
