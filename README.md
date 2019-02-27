@@ -200,7 +200,7 @@ class LinkedList (object):
       previous.next = current.next
 
     return current
-    ```
+```
 
 **Stack:** last in, first out (LIFO) 
 ```python
@@ -239,7 +239,8 @@ class Queue (object):
     return (len (self.queue) == 0)
 
   def size (self):
-    return len (self.queue)```
+    return len (self.queue)
+   ```
 
 **Tree:** an undirected, connected, acyclic graph 
 
