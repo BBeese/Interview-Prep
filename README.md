@@ -4,6 +4,9 @@ Collection of wonderful CS concepts and algorithms you will inevitably be asked 
 ## Basics 
 - Class: basic concept in OOP, bundles data type information with action
 - Hierarchy: classes can have super and subclasses
+- OOP: Objects contain variables and methods to store and compute data, and a constructor for initialization purposes. 
+  They can be bound by encapsulation and information hiding to prevent data leaks and can be implemented in other objects with inheritance.
+  Polymorphism can be used to overwrite variables and methods and abstraction can be used to template future instances.
 
 ## HTTP Methods
 - GET: used to retrieve data, no other effect on the data
