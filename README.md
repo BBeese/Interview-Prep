@@ -2,6 +2,9 @@
 Collection of wonderful CS concepts and algorithms you will inevitably be asked asked about in an interview.
 
 ## Basics 
+- SDLC (Software Development Life Cycle): design, develop, test high quality software
+    + Planning -> Defining -> Designing -> Building -> Testing -> Deployment
+- AGILE : Rapid delivery of a working product, small incremental builds
 - C++, Java (kinda), etc. are *low* languages, Python high
   + Low level languages are close to machine language. Generally more efficient
   + High level languages are easier to understand; more abstraction. More portable
@@ -12,6 +15,12 @@ Collection of wonderful CS concepts and algorithms you will inevitably be asked 
   + Class: basic concept in OOP, bundles data type information with action
   + Hierarchy: classes can have super and subclasses
   + An *Object* is an instance of a *Class*
+  
+## SQL
+- Unique Key (FK): Column/Group of columns that identify uniqueness in a row
+- Primary Key (PK) : a unique key, but there can be only one primary key
+- Foreign Key (FK) : Provides an association between data and 2 tables
+- Outer Join (Left, Right), Inner Join
 
 ## HTTP Methods
 - GET: used to retrieve data, no other effect on the data
