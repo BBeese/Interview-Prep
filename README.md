@@ -2,11 +2,16 @@
 Collection of wonderful CS concepts and algorithms you will inevitably be asked asked about in an interview.
 
 ## Basics 
-- Class: basic concept in OOP, bundles data type information with action
-- Hierarchy: classes can have super and subclasses
+- C++, Java (kinda), etc. are *low* languages, Python high
+  + Low level languages are close to machine language. Generally more efficient
+  + High level languages are easier to understand; more abstraction. More portable
+- A *Compiler* generates an executable (.exe) 
 - OOP: Objects contain variables and methods to store and compute data, and a constructor for initialization purposes. 
   They can be bound by encapsulation and information hiding to prevent data leaks and can be implemented in other objects with inheritance.
   Polymorphism can be used to overwrite variables and methods and abstraction can be used to template future instances.
+  + Class: basic concept in OOP, bundles data type information with action
+  + Hierarchy: classes can have super and subclasses
+  + An *Object* is an instance of a *Class*
 
 ## HTTP Methods
 - GET: used to retrieve data, no other effect on the data
@@ -289,6 +294,10 @@ class Queue (object):
 
 ## Questions? 
 -  “Thinking back to people you’ve seen do this work previously, what differentiated the ones who were good from the ones who were really great at it?”
--  “What do you like about working here?” 
+-  "Mentorship? Onboarding?" 
+-  "Oppurtunities for advancement"
+-  “What do you personally like about working here?” 
+-  "Describe the culture/ More collaborative or secluded"
+    + *haven't found a good way to word this...*
 
 
