@@ -16,6 +16,10 @@ Collection of wonderful CS concepts and algorithms you will inevitably be asked 
   + Hierarchy: classes can have super and subclasses
   + An *Object* is an instance of a *Class*
   
+## Databases 
+ORM vs ODM - Object Relational Mapper vs Object Document Mapper
+  
+  
 ## SQL
 - Unique Key (FK): Column/Group of columns that identify uniqueness in a row
 - Primary Key (PK) : a unique key, but there can be only one primary key
