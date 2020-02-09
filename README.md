@@ -18,6 +18,7 @@ Collection of wonderful CS concepts and algorithms you will inevitably be asked 
   
 ## Databases 
 ORM vs ODM - Object Relational Mapper vs Object Document Mapper
+SQL vs noSQL (non SQL) databases - MongoDB uses objects, non-relational database
   
   
 ## SQL
@@ -312,5 +313,11 @@ class Queue (object):
 -  “What do you personally like about working here?” 
 -  "Describe the culture/ More collaborative or secluded"
     + *haven't found a good way to word this...*
+    
+# Things to work on: 
+- map, reduce, filter in python
+- cloud with python 
+- refresh data structures & algosw
+- maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day
 
 
