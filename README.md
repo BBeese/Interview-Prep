@@ -16,8 +16,8 @@
   + An *Object* is an instance of a *Class*
   
 ## Databases 
-ORM vs ODM - Object Relational Mapper vs Object Document Mapper
-SQL vs noSQL (non SQL) databases - MongoDB uses objects, non-relational database
+- ORM vs ODM - Object Relational Mapper vs Object Document Mapper
+- SQL vs noSQL (non SQL) databases - MongoDB uses objects, non-relational database
   
   
 ## SQL
@@ -269,7 +269,7 @@ class Queue (object):
     return len (self.queue)
  ```
 
-**Tree:** an undirected, connected, acyclic graph **Twitter username validation**
+**Tree:** an undirected, connected, acyclic graph [Twitter username validation]
 
 **Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b)
 
