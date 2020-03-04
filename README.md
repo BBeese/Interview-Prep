@@ -1,11 +1,10 @@
 # Interview_Prep
-Collection of wonderful CS concepts and algorithms you will inevitably be asked asked about in an interview.
 
 ## Basics 
 - SDLC (Software Development Life Cycle): design, develop, test high quality software
     + Planning -> Defining -> Designing -> Building -> Testing -> Deployment
 - AGILE : Rapid delivery of a working product, small incremental builds
-- C++, Java (kinda), etc. are *low* languages, Python high
+- C++, Java (kinda), etc. are *low* level languages, Python high
   + Low level languages are close to machine language. Generally more efficient
   + High level languages are easier to understand; more abstraction. More portable
 - A *Compiler* generates an executable (.exe) 
@@ -270,7 +269,7 @@ class Queue (object):
     return len (self.queue)
  ```
 
-**Tree:** an undirected, connected, acyclic graph 
+**Tree:** an undirected, connected, acyclic graph **Twitter username validation**
 
 **Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b)
 
@@ -300,24 +299,20 @@ class Queue (object):
 
 **Graph - Dijkstra'sAlgorithmSearch:**
 
-**Brute Force:**
+**Brute Force:** (Personal fav)
 
 **Greedy:** 
 
 **Dynamic Programming:**
 
-## Questions? 
--  “Thinking back to people you’ve seen do this work previously, what differentiated the ones who were good from the ones who were really great at it?”
+## Questions to ask Interviewer 
 -  "Mentorship? Onboarding?" 
--  "Oppurtunities for advancement"
 -  “What do you personally like about working here?” 
--  "Describe the culture/ More collaborative or secluded"
-    + *haven't found a good way to word this...*
     
 # Things to work on: 
 - map, reduce, filter in python
 - cloud with python 
 - refresh data structures & algosw
-- maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day
+- maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
 
 
