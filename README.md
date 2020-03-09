@@ -409,6 +409,10 @@ d = {} #better never forget this either
 -  What does a typical day look like?
 -  Can you tell me about the team I'll be working with?
 -  What do you personally like about working here?
+
+## Behavioral questions to prepare for
+- What is your greatest strength?
+- What is your greatest weakness?
     
 # Things to work on: 
 - map, reduce, filter in python
