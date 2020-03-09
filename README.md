@@ -270,9 +270,108 @@ class Queue (object):
     return len (self.queue)
  ```
 
-**Tree:** an undirected, connected, acyclic graph [Twitter username validation]
+**BST (Binary Search Tree):** nodes connected by edges. Left node smaller than right. [Twitter username validation]
+```python
+class Node (object):
+  def __init__ (self, data):
+    self.data = data
+    self.left = None
+    self.right = None
+    
+class Tree (object):
+  def __init__ (self):
+    self.root = None
+    
+  def insert(self, data):
+    new_node = Node (data)
+    if (self.root == None):
+      self.root = new_node
+    else:
+      current = self.root
+      parent = self.root
+      while (current != None):
+        parent = current
+        if (data == current.data):
+          return
+        elif (data < current.data):
+          current = current.left
+        else:
+          current = current.right
+      if (data < parent.data):
+        parent.left = new_node
+      else:
+        parent.right = new_node
+	
+  # the search() function will search for a character in the binary
+  # search tree and return a string containing a series of lefts
+  # (<) and rights (>) needed to reach that character. It will
+  # return a blank string if the character does not exist in the tree.
+  # It will return * if the character is the root of the tree.
+  
+  def search (self, data):
+    output = ''
+    current = self.root
+    if (self.root.data == data):
+      return '*'
+    while (current != None):
+      if (current.data == data):
+          return output
+      elif (data < current.data):
+        current = current.left
+        output += '<'
+      else:
+        current = current.right
+        output += '>'
 
-**Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b)
+    return output
+    
+def num_nodes(self, node):
+  if node == None:
+    return 0
+  else:
+    return 1 + num_nodes(self, node.left) + num_nodes(self, node.right)
+    
+def get_height(self, node):
+  if node == None:
+    return 0
+  else:
+    return 1 + max(num_nodes(self, node.left) + num_nodes(self, node.right))
+    
+# Inorder traversal
+# Left -> Root -> Right
+    def inorderTraversal(self, root):
+        res = []
+        if root:
+            res = self.inorderTraversal(root.left)
+            res.append(root.data)
+            res = res + self.inorderTraversal(root.right)
+        return res
+	
+# Preorder traversal
+# Root -> Left ->Right
+    def PreorderTraversal(self, root):
+        res = []
+        if root:
+            res.append(root.data)
+            res = res + self.PreorderTraversal(root.left)
+            res = res + self.PreorderTraversal(root.right)
+        return res
+	
+# Postorder traversal
+# Left ->Right -> Root
+    def PostorderTraversal(self, root):
+        res = []
+        if root:
+            res = self.PostorderTraversal(root.left)
+            res = res + self.PostorderTraversal(root.right)
+            res.append(root.data)
+        return res
+```
+
+**Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b). A dictionary in python 
+```python
+d = {} #better never forget this either 
+```
 
 **Heap:** a special tree where nodes have higher (in the case of a min-heap) values than their parents
 
