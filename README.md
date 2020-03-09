@@ -18,6 +18,8 @@
 ## Databases 
 - ORM vs ODM - Object Relational Mapper vs Object Document Mapper
 - SQL vs noSQL (non SQL) databases - MongoDB uses objects, non-relational database
+	- Relational databases use relations (typically called tables) to store data and then match that data by using common characteristics within the dataset
+	- All noSQL documents are JSON documents, which are complete entities that one can readily read and understand. Ease of use, scalable, wide availability. 
   
   
 ## SQL
@@ -39,7 +41,6 @@
 - 403 Forbidden: request understood but not fulfilled, authorization will not help
 - 404 Not Found: URI could not be matched
 - 408 Request Timeout: server did not receive a timely response from client
-- 418 I'm a teapot: the resulting entity body may be short and stout
 - 500 Internal Server Error: server exception
 - 503 Service Unavailable: server unable to handle the request (temporary)
 - 504 Gateway Timeout: server did not receive a timely response from upstream server
@@ -95,7 +96,7 @@ class Dog(Animal):
         return ("ruff")
 ```
 
-**Encapsulation** - a mechanism of binding the data member & member function into a single unit known as class. Encapsulation provides a way for abstraction. In OOP the encapsulation is mainly achieved by creating classes, the classes expose public methods and properties. The class is kind of a container or capsule or a cell, which encapsulate the set of methods, attribute and properties to provide its indented functionalities to other classes
+**Encapsulation** - a mechanism of binding the data and methods into a single unit known as class. Encapsulation provides a way for abstraction. In OOP the encapsulation is mainly achieved by creating classes, the classes expose public methods and properties. The class is kind of a container or capsule or a cell, which encapsulate the set of methods, attribute and properties to provide its indented functionalities to other classes
 
 For example, we may create a piece of code that calls specific data from a database. It may be useful to reuse that code with other databases or processes. Encapsulation lets us do that while keeping our original data private. It also lets us alter our original code without breaking it for others who have adopted it in the meantime.
 
@@ -160,7 +161,7 @@ print(c.getName())
 
 **Array:**  a collection with specified size 
 ```python
-ar = [] #:)
+ar = [] #better never forget this 
 ```
 
 **LinkedList:**  a collection of nodes where each node has a value and a reference
@@ -280,7 +281,6 @@ class Queue (object):
 # Algorithms:
 
 **Binary Search:**
-
 **Insertion Sort:**
 
 **Bubble Sort:**
@@ -299,20 +299,22 @@ class Queue (object):
 
 **Graph - Dijkstra'sAlgorithmSearch:**
 
-**Brute Force:** (Personal fav)
+**Brute Force:**
 
 **Greedy:** 
 
 **Dynamic Programming:**
 
 ## Questions to ask Interviewer 
--  "Mentorship? Onboarding?" 
--  “What do you personally like about working here?” 
+-  Mentorship? Onboarding? 
+-  What does a typical day look like?
+-  Can you tell me about the team I'll be working with?
+-  What do you personally like about working here?
     
 # Things to work on: 
 - map, reduce, filter in python
 - cloud with python 
-- refresh data structures & algosw
+- refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
 
 
