@@ -270,7 +270,7 @@ class Queue (object):
     return len (self.queue)
  ```
 
-**BST (Binary Search Tree):** nodes connected by edges. Left node smaller than right. [Twitter username validation]
+**BST (Binary Search Tree):** nodes connected by edges. Left node smaller than right. A node with no child is typically called a leaf node. [Twitter username validation]
 ```python
 class Node (object):
   def __init__ (self, data):
@@ -337,7 +337,14 @@ def get_height(self, node):
   else:
     return 1 + max(num_nodes(self, node.left) + num_nodes(self, node.right))
     
-# Inorder traversal
+# Level Order Traversal
+# 1) Top to bottom 2) Left to Right 
+          1
+        2   3
+      4   5
+  returns: 1 2 3 4 5
+
+# Inorder traversal (DFS Traversal)
 # Left -> Root -> Right [L > N > R]
     def inorderTraversal(self, root):
         res = []
@@ -347,7 +354,7 @@ def get_height(self, node):
             res = res + self.inorderTraversal(root.right)
         return res
 	
-# Preorder traversal
+# Preorder traversal (DFS Traversal)
 # Root -> Left ->Right [N > L > R]
     def PreorderTraversal(self, root):
         res = []
@@ -357,7 +364,7 @@ def get_height(self, node):
             res = res + self.PreorderTraversal(root.right)
         return res
 	
-# Postorder traversal
+# Postorder traversal (DFS Traversal)
 # Left -> Right -> Root [L > R > N]
     def PostorderTraversal(self, root):
         res = []
@@ -392,9 +399,9 @@ d = {} #better never forget this either
 
 **Bucket Sort:**
 
-**Graph - DepthFirstSearch:**
+**BreadthFirstSearch:** - Visits nodes starting from root
 
-**Graph - BreadthFirstSearch:**
+**DepthFirstSearch:** - Visits nodes starting from leaves
 
 **Graph - Dijkstra'sAlgorithmSearch:**
 
@@ -412,7 +419,7 @@ d = {} #better never forget this either
 -  Can you tell me about the team I'll be working with?
 -  What do you personally like about working here?
 
-## Behavioral questions to prepare for 
+## Behavioral questions 
 - Tell me about yourself.
 - Why do you want to for for X?
 - What is a time you had a conflict with a team member, and how did you resolve it?
@@ -427,8 +434,6 @@ d = {} #better never forget this either
 - How do you handle conflict / anger?
 - Tell me about a time you made a mistake and how did you resolve it?
 
-
-
 # Things to work on: 
 - map, reduce, filter in python
 - cloud with python 
@@ -438,3 +443,5 @@ d = {} #better never forget this either
 # External resources and sources:
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
+- [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+- [bfs vs dfs 'this one is money'](https://algodaily.com/lessons/dfs-vs-bfs)
