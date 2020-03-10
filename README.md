@@ -444,4 +444,4 @@ d = {} #better never forget this either
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
 - [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
-- [bfs vs dfs 'this one is money'](https://algodaily.com/lessons/dfs-vs-bfs)
+- [bfs vs dfs **this one is money**](https://algodaily.com/lessons/dfs-vs-bfs)
