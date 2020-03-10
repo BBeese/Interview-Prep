@@ -402,6 +402,8 @@ d = {} #better never forget this either
 
 **Greedy:** 
 
+**Divide & Conquor** 
+
 **Dynamic Programming:**
 
 ## Questions to ask Interviewer 
@@ -410,14 +412,29 @@ d = {} #better never forget this either
 -  Can you tell me about the team I'll be working with?
 -  What do you personally like about working here?
 
-## Behavioral questions to prepare for
+## Behavioral questions to prepare for 
+- Tell me about yourself.
+- Why do you want to for for X?
+- What is a time you had a conflict with a team member, and how did you resolve it?
 - What is your greatest strength?
 - What is your greatest weakness?
-    
+- What was a challenge you had to overcome?
+- Describe a time in the past where you have failed, and what you learned from it
+- What are you actively trying to improve on?
+- Why are you switching jobs?
+- What do you know about this company?
+- What does your dream job look like?
+- How do you handle conflict / anger?
+- Tell me about a time you made a mistake and how did you resolve it?
+
+
+
 # Things to work on: 
 - map, reduce, filter in python
 - cloud with python 
 - refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
 
-
+# External resources and sources:
+- [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
+- [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
