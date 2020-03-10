@@ -338,7 +338,7 @@ def get_height(self, node):
     return 1 + max(num_nodes(self, node.left) + num_nodes(self, node.right))
     
 # Inorder traversal
-# Left -> Root -> Right
+# Left -> Root -> Right [L > N > R]
     def inorderTraversal(self, root):
         res = []
         if root:
@@ -348,7 +348,7 @@ def get_height(self, node):
         return res
 	
 # Preorder traversal
-# Root -> Left ->Right
+# Root -> Left ->Right [N > L > R]
     def PreorderTraversal(self, root):
         res = []
         if root:
@@ -358,7 +358,7 @@ def get_height(self, node):
         return res
 	
 # Postorder traversal
-# Left ->Right -> Root
+# Left -> Right -> Root [L > R > N]
     def PostorderTraversal(self, root):
         res = []
         if root:
