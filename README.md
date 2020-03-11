@@ -380,9 +380,9 @@ def get_height(self, node):
 d = {} #better never forget this either 
 ```
 
-**Heap:** a special tree where nodes have higher (in the case of a min-heap) values than their parents
+**Heap:** A special tree structure in which each parent node is less than or equal to its child node. Then it is called a Min Heap. If each parent node is greater than or equal to its child node then it is called a max heap. It is very useful is implementing priority queues where the queue item with higher weightage is given more priority in processing.
 
-**Graph:** a collection of nodes and edges and can be directed or undirected
+**Graph:** A collection of nodes and edges and can be directed or undirected.
 
 # Algorithms:
 
@@ -445,3 +445,4 @@ d = {} #better never forget this either
 - [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
 - [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
 - [bfs vs dfs **this one is money**](https://algodaily.com/lessons/dfs-vs-bfs)
+- [basic graphs](https://www.bogotobogo.com/python/python_graph_data_structures.php)
