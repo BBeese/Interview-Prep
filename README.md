@@ -433,6 +433,7 @@ d = {} #better never forget this either
 - What does your dream job look like?
 - How do you handle conflict / anger?
 - Tell me about a time you made a mistake and how did you resolve it?
+- Tell me about something you did at work you are proud of?
 
 # Things to work on: 
 - map, reduce, filter in python
