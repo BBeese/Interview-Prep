@@ -1,5 +1,3 @@
-# Interview_Prep
-
 ## Basics 
 - SDLC (Software Development Life Cycle): design, develop, test high quality software
     + Planning -> Defining -> Designing -> Building -> Testing -> Deployment
@@ -28,13 +26,24 @@
 - Foreign Key (FK) : Provides an association between data and 2 tables
 - Outer Join (Left, Right), Inner Join
 
-## HTTP Methods
+### Order of execution:
+  1) FROM
+  2) JOIN
+  3) WHERE
+  4) GROUP BY
+  5) HAVING
+  6) SELECT 
+  7) DISTINCT 
+  8) ORDER
+
+## HTTP
+### Methods
 - GET: used to retrieve data, no other effect on the data
 - POST: used to send data to the server (e.g. form)
 - PUT: replaces current representation of resource (idempotent)
 - DELETE: remove current representation resource
 
-## HTTP Status Codes
+### Status Codes
 - 200 OK: success
 - 400 Bad Request: syntax could not be understood
 - 401 Unauthorized: request not fulfilled due to lack of authorization
@@ -162,6 +171,11 @@ print(c.getName())
 **Array:**  a collection with specified size 
 ```python
 ar = [] #better never forget this 
+```
+
+**Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b). A dictionary in python 
+```python
+d = {} #better never forget this either 
 ```
 
 **LinkedList:**  a collection of nodes where each node has a value and a reference
@@ -375,11 +389,6 @@ def get_height(self, node):
         return res
 ```
 
-**Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b). A dictionary in python 
-```python
-d = {} #better never forget this either 
-```
-
 **Heap:** A special tree structure in which each parent node is less than or equal to its child node. Then it is called a Min Heap. If each parent node is greater than or equal to its child node then it is called a max heap. It is very useful is implementing priority queues where the queue item with higher weightage is given more priority in processing.
 
 **Graph:** A collection of nodes and edges and can be directed or undirected.
@@ -387,6 +396,7 @@ d = {} #better never forget this either
 # Algorithms:
 
 **Binary Search:**
+
 **Insertion Sort:**
 
 **Bubble Sort:**
@@ -421,17 +431,17 @@ d = {} #better never forget this either
 
 ## Behavioral questions 
 - Tell me about yourself.
-- Why do you want to for for X?
+- **Why do you want to for for X?**
 - What is a time you had a conflict with a team member, and how did you resolve it?
 - What is your greatest strength?
 - What is your greatest weakness?
+- **What are your goals?**
 - What was a challenge you had to overcome?
-- Describe a time in the past where you have failed, and what you learned from it
+- Describe a time where you have failed, and what you learned from it
 - What are you actively trying to improve on?
-- Why are you switching jobs?
-- What do you know about this company?
+- **Why are you switching jobs?**
 - What does your dream job look like?
-- How do you handle conflict / anger?
+- Where do you see yourself in 5 years? 
 - Tell me about a time you made a mistake and how did you resolve it?
 - Tell me about something you did at work you are proud of?
 
@@ -440,6 +450,7 @@ d = {} #better never forget this either
 - cloud with python 
 - refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
+- refresh Java
 
 # External resources and sources:
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
