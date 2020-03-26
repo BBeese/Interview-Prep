@@ -454,6 +454,7 @@ def get_height(self, node):
 
 # External resources and sources:
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
+- [System design resources](https://github.com/donnemartin/system-design-primer)
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
 - [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
