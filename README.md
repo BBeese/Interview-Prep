@@ -2,7 +2,7 @@
 - SDLC (Software Development Life Cycle): design, develop, test high quality software
     + Planning -> Defining -> Designing -> Building -> Testing -> Deployment
 - AGILE : Rapid delivery of a working product, small incremental builds
-- C++, Java (kinda), etc. are *low* level languages, Python high
+- C++ is a *low* level languages, Python high
   + Low level languages are close to machine language. Generally more efficient
   + High level languages are easier to understand; more abstraction. More portable
 - A *Compiler* generates an executable (.exe) 
@@ -453,6 +453,7 @@ def get_height(self, node):
 - refresh Java
 
 # External resources and sources:
+- [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
 - [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
