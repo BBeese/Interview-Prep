@@ -433,6 +433,7 @@ def get_height(self, node):
 - Tell me about yourself.
 - **Why do you want to for for X?**
 - What is a time you had a conflict with a team member, and how did you resolve it?
+- Tell me about a time when you solved a conflict at work.
 - What is your greatest strength?
 - What is your greatest weakness?
 - **What are your goals?**
@@ -440,7 +441,6 @@ def get_height(self, node):
 - Describe a time where you have failed, and what you learned from it
 - What are you actively trying to improve on?
 - **Why are you switching jobs?**
-- What does your dream job look like?
 - Where do you see yourself in 5 years? 
 - Tell me about a time you made a mistake and how did you resolve it?
 - Tell me about something you did at work you are proud of?

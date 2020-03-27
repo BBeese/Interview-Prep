@@ -1,3 +1,5 @@
+[ Need to add - Super, ArrayList vs Vector, StringBuffer vs StringBuilder,
+
 ## Primitive Data Types:
 - Byte      
 - Short
@@ -65,6 +67,15 @@ Two or more methods with the same name.
 
 Can have the same method name for multiple methods, if different number of parameters, different types of parameters. Constructor overloading is possible as well. 
 
+```java
+public void demoOverloading() {
+    System.out.println("this is before being overloaded");
+}
+public void demoOverloading("yello") {
+    System.out.println("after being overloaded");
+}
+```
+
 Different from 'Method Overriding'; 
 ```java
 @Override
@@ -75,11 +86,13 @@ public float addProduct(Product[] products) {
 
 ## Abtract
 
+- Ensures child classes implement a method. Enforces Inheritance. Enforces method overriding.
 **Fill this in**
 
 ## Interface
 - Blueprint of a class. Only contains method signatures. (No body!)
 - Used to achieve total abstraction
+- Enforces standard rules or contracts. Specifies WHAT, not HOW
 
 ```java
 interface x {
@@ -114,4 +127,8 @@ String demoString = "yo";
 int demoStringLength = demoString.length();
 ```
 
+## Collections; Listiterator, arraylist, Map
 
+## Set, Hashset, Treeset (Maybe)
+
+## Streams
