@@ -417,7 +417,20 @@ def get_height(self, node):
 
 **DepthFirstSearch:** - Visits nodes starting from leaves
 
-**Graph - Dijkstra'sAlgorithmSearch:**
+**Dijkstra'sAlgorithm:** [Weighted Graph] Minimum distance from one node to all other nodes. 
+Given graph g, list of all vertices allVertices, list of all edges edges, starting vertex startVertex ->
+
+1. Set array vertexDistances = {}; distances from startVertex to all other vertices
+2. Set array unvisitedVertices = []  
+3. For every vertex v in allVertices, set vertexDistances[v] = infinity
+4. For every vertex v in allVertices, add v to unvisitedVertices
+5. Set vertexDistances[startVertex] = 0
+6. Update vertexDistance[adjacent vertices of startNode] = weight(startVertex, adjVertex)
+7. If unvisitedVertices is not empty, select v from unvisitedVertices with SMALLEST vertexDistance value
+8. For every adjacent vertex n of v, such that n is in unvisitedVertex:
+  - Let a = vertexDistances[n] + weight(v, n). weight(x, y) is the edge weight from vertex x to vertex y.
+9. if a < vertexDistance[n], set vertexDistance[n] = a. 
+10. Repeat step 6 until unvisitedVertices is empty.  
 
 **Brute Force:**
 
@@ -464,3 +477,5 @@ def get_height(self, node):
 - [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
 - [bfs vs dfs **this one is money**](https://algodaily.com/lessons/dfs-vs-bfs)
 - [basic graphs](https://www.bogotobogo.com/python/python_graph_data_structures.php)
+- [sorting](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
+- [dijkstras](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
