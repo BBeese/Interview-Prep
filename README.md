@@ -395,19 +395,23 @@ def get_height(self, node):
 
 # Algorithms:
 
-**Binary Search:**
+**Insertion Sort:** Compare each element with the previous element, 'insert' element in previous position until it is in correct order. 
 
-**Insertion Sort:**
+**Bubble Sort:** NOT efficient. Iterate through list, swap numbers if i < i+1, until all sorted. 
+[6, 7, 8, 9, 2, 1, 5] -> [6, 7, 8, 2, 1, 5, 9]
+9 'bubbles' to the top.
 
-**Bubble Sort:**
+**Selection Sort:** Scan entire UNSORTED portion of the array until minimum value is found, then move this value to the front. 
 
-**Selection Sort:**
+**Merge Sort:** Efficient. Partition array until each number in own array, merge each partition until entire array is sorted.
 
-**Merge Sort:**
+**Quick Sort:** Efficient. Pick pivot element, ensure all elements before pivot < the pivot, all elements to right > pivot. Swapping elements on each side of pivot.
 
-**Quick Sort:**
+**Bucket Sort:** Buckets are created to put elements inside, then insertion sort applied on each bucket. Basically a stem and leaf plot, then sort merge each bucket together.
 
-**Bucket Sort:**
+**Binary Search:** If num im searching for is < midpoint, binary search on left side. else, right.
+[1, 2, 3, 4, 5, 6, 7], Search for 2. Next iteration:
+[1, 2, 3]
 
 **BreadthFirstSearch:** - Visits nodes starting from root
 
