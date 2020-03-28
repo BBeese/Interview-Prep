@@ -377,7 +377,23 @@ def get_height(self, node):
 [1, 2, 3, 4, 5, 6, 7], Search for 2. Next iteration:
 [1, 2, 3]
 
-**BreadthFirstSearch:** - Or, "Level-Order Traversal", row based search. Horizontal. QUEUE.
+```python 
+# This code not tested but looks right to me
+def binSearch(nums, value):
+  if len(nums) <= 1:
+    return -1
+
+  mid = len(nums) // 2
+  elif value < nums[i]:
+    return binSearch(nums[:mid])
+  elif value > nums[i]:
+    return binSearch(nums[mid+1:])
+  else:
+    return mid
+
+```
+
+**(BFS) BreadthFirstSearch:** - Or, "Level-Order Traversal", row based search. Horizontal. QUEUE.
 ```python
 def bfs(root):
   if root == None:
@@ -402,7 +418,7 @@ def bfs(root):
 - If you're solving a problem, and know a solution is not far from the root of the tree, BFS will likely get you there faster.
 - If the tree is very deep, BFS might be faster
 
-**DepthFirstSearch:** - Visits nodes starting from leaves, or from root. Vertical. STACK.
+**(DFS) DepthFirstSearch:** - Visits nodes starting from leaves, or from root. Vertical. STACK.
 
 ```python
 # Inorder traversal (DFS Traversal)
