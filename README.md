@@ -250,7 +250,7 @@ class Stack (object):
     self.stack = []
 
   def push (self, item):
-    self.stack.insert (0, item )
+    self.stack.insert (0, item)
 
   def pop (self):
     return self.stack.pop(0)
@@ -272,8 +272,9 @@ class Queue (object):
     self.queue = []
 
   def enqueue (self, item):
-    self.queue.append (item)
+    self.queue.append(item)
 
+  # Removes last element
   def dequeue (self):
     return (self.queue.pop(0))
 
@@ -350,14 +351,60 @@ def get_height(self, node):
     return 0
   else:
     return 1 + max(num_nodes(self, node.left) + num_nodes(self, node.right))
-    
-# Level Order Traversal
-# 1) Top to bottom 2) Left to Right 
-          1
-        2   3
-      4   5
-  returns: 1 2 3 4 5
+```
 
+**Heap:** A special tree structure in which each parent node is less than or equal to its child node. Then it is called a Min Heap. If each parent node is greater than or equal to its child node then it is called a max heap. It is very useful is implementing priority queues where the queue item with higher weightage is given more priority in processing.
+
+**Graph:** A collection of nodes and edges and can be directed or undirected.
+
+# Algorithms:
+
+**Insertion Sort:** Compare each element with the previous element, 'insert' element in previous position until it is in correct order. 
+
+**Bubble Sort:** NOT efficient. Iterate through list, swap numbers if i < i+1, until all sorted. 
+[6, 7, 8, 9, 2, 1, 5] -> [6, 7, 8, 2, 1, 5, 9]
+9 'bubbles' to the top.
+
+**Selection Sort:** Scan entire UNSORTED portion of the array until minimum value is found, then move this value to the front. 
+
+**Merge Sort:** Efficient. Partition array until each number in own array, merge each partition until entire array is sorted.
+
+**Quick Sort:** Efficient. Pick pivot element, ensure all elements before pivot < the pivot, all elements to right > pivot. Swapping elements on each side of pivot.
+
+**Bucket Sort:** Buckets are created to put elements inside, then insertion sort applied on each bucket. Basically a stem and leaf plot, then sort merge each bucket together.
+
+**Binary Search:** If num im searching for is < midpoint, binary search on left side. else, right.
+[1, 2, 3, 4, 5, 6, 7], Search for 2. Next iteration:
+[1, 2, 3]
+
+**BreadthFirstSearch:** - Or, "Level-Order Traversal", row based search. Horizontal. QUEUE.
+```python
+def bfs(root):
+  if root == None:
+    return
+  
+  q = Queue()
+  q.enque(root)
+  payload = []
+
+  while not (q.isEmpty):
+    node = q.deque()
+    payload.insert(0, node.value)
+    if node.left: 
+      q.enque(node.left)
+    elif node.right():
+      q.enque(node.right)
+
+```
+
+### When to use:
+- When you need to find the shortest path between any two nodes in an unweighted graph.
+- If you're solving a problem, and know a solution is not far from the root of the tree, BFS will likely get you there faster.
+- If the tree is very deep, BFS might be faster
+
+**DepthFirstSearch:** - Visits nodes starting from leaves, or from root. Vertical. STACK.
+
+```python
 # Inorder traversal (DFS Traversal)
 # Left -> Root -> Right [L > N > R]
     def inorderTraversal(self, root):
@@ -389,35 +436,11 @@ def get_height(self, node):
         return res
 ```
 
-**Heap:** A special tree structure in which each parent node is less than or equal to its child node. Then it is called a Min Heap. If each parent node is greater than or equal to its child node then it is called a max heap. It is very useful is implementing priority queues where the queue item with higher weightage is given more priority in processing.
+### When to use:
+- DFS is more space efficient than BFS.
+- If the tree is very wide, BFS will likely be incredibly memory inefficient, so DFS could be better.
 
-**Graph:** A collection of nodes and edges and can be directed or undirected.
-
-# Algorithms:
-
-**Insertion Sort:** Compare each element with the previous element, 'insert' element in previous position until it is in correct order. 
-
-**Bubble Sort:** NOT efficient. Iterate through list, swap numbers if i < i+1, until all sorted. 
-[6, 7, 8, 9, 2, 1, 5] -> [6, 7, 8, 2, 1, 5, 9]
-9 'bubbles' to the top.
-
-**Selection Sort:** Scan entire UNSORTED portion of the array until minimum value is found, then move this value to the front. 
-
-**Merge Sort:** Efficient. Partition array until each number in own array, merge each partition until entire array is sorted.
-
-**Quick Sort:** Efficient. Pick pivot element, ensure all elements before pivot < the pivot, all elements to right > pivot. Swapping elements on each side of pivot.
-
-**Bucket Sort:** Buckets are created to put elements inside, then insertion sort applied on each bucket. Basically a stem and leaf plot, then sort merge each bucket together.
-
-**Binary Search:** If num im searching for is < midpoint, binary search on left side. else, right.
-[1, 2, 3, 4, 5, 6, 7], Search for 2. Next iteration:
-[1, 2, 3]
-
-**BreadthFirstSearch:** - Visits nodes starting from root
-
-**DepthFirstSearch:** - Visits nodes starting from leaves
-
-**Dijkstra'sAlgorithm:** [Weighted Graph] Minimum distance from one node to all other nodes. 
+**Dijkstra's Algorithm:** [Weighted Graph] Minimum distance from one node to all other nodes. 
 Given graph g, list of all vertices allVertices, list of all edges edges, starting vertex startVertex ->
 
 1. Set array vertexDistances = {}; distances from startVertex to all other vertices
@@ -475,7 +498,6 @@ Given graph g, list of all vertices allVertices, list of all edges edges, starti
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
 - [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
-- [bfs vs dfs **this one is money**](https://algodaily.com/lessons/dfs-vs-bfs)
 - [basic graphs](https://www.bogotobogo.com/python/python_graph_data_structures.php)
 - [sorting](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
 - [dijkstras](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
