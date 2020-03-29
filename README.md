@@ -359,6 +359,8 @@ def get_height(self, node):
 
 # Algorithms:
 
+## Sorting
+
 **Insertion Sort:** Compare each element with the previous element, 'insert' element in previous position until it is in correct order. 
 
 **Bubble Sort:** NOT efficient. Iterate through list, swap numbers if i < i+1, until all sorted. 
@@ -372,6 +374,8 @@ def get_height(self, node):
 **Quick Sort:** Efficient. Pick pivot element, ensure all elements before pivot < the pivot, all elements to right > pivot. Swapping elements on each side of pivot.
 
 **Bucket Sort:** Buckets are created to put elements inside, then insertion sort applied on each bucket. Basically a stem and leaf plot, then sort merge each bucket together.
+
+## Searches
 
 **Binary Search:** If num im searching for is < midpoint, binary search on left side. else, right.
 [1, 2, 3, 4, 5, 6, 7], Search for 2. Next iteration:
@@ -471,13 +475,19 @@ Given graph g, list of all vertices allVertices, list of all edges edges, starti
 9. if a < vertexDistance[n], set vertexDistance[n] = a. 
 10. Repeat step 6 until unvisitedVertices is empty.  
 
+## Algorithm design
+
 **Brute Force:**
+Entertain every single possible choice. Exhaustive search. 
 
 **Greedy:** 
+Always makes the choice that seems to be the best at that moment. Locally optimal choice.
 
 **Divide & Conquor** 
+Divide problem into smaller subproblems - NO storing solution of each subproblem. 
 
 **Dynamic Programming:**
+Divide problem into smaller subproblems - Stores solution of each subproblem. Each subproblem IS dependent on the other.
 
 ## Questions to ask Interviewer 
 -  Mentorship? Onboarding? 
@@ -507,6 +517,13 @@ Given graph g, list of all vertices allVertices, list of all edges edges, starti
 - refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
 - refresh Java
+- Coding questions:
+  - Permutations/Combinations/Partitions
+  - LinkedList manipulations
+  - Graph/Tree manipulations
+  - Dynamic programming examples
+  - Matrix traversals
+  - Best/fastest route from a to b
 
 # External resources and sources:
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
