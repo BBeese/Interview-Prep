@@ -524,6 +524,7 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Dynamic programming examples
   - Matrix traversals
   - Best/fastest route from a to b
+  - Sliding window examples
 
 # External resources and sources:
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
