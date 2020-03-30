@@ -1,7 +1,7 @@
 ## Basics 
 - SDLC (Software Development Life Cycle): design, develop, test high quality software
     + Planning -> Defining -> Designing -> Building -> Testing -> Deployment
-- AGILE : Rapid delivery of a working product, small incremental builds
+- AGILE : Rapid delivery of a working product, small incremental builds. Useful for rapidly changing requirements
 - C++ is a *low* level languages, Python high
   + Low level languages are close to machine language. Generally more efficient
   + High level languages are easier to understand; more abstraction. More portable
@@ -12,6 +12,8 @@
   + Class: basic concept in OOP, bundles data type information with action
   + Hierarchy: classes can have super and subclasses
   + An *Object* is an instance of a *Class*
+- Functional programming - useful when there are few *things* but more operations. 'State' does not exist.
+  - OOP useful when there are more things, with less operations. State exists.
   
 ## Databases 
 - ORM vs ODM - Object Relational Mapper vs Object Document Mapper
@@ -430,9 +432,9 @@ def bfs(root):
     def inorderTraversal(self, root):
         res = []
         if root:
-            res = self.inorderTraversal(root.left)
+            res = inorderTraversal(root.left)
             res.append(root.data)
-            res = res + self.inorderTraversal(root.right)
+            res = res + inorderTraversal(root.right)
         return res
 	
 # Preorder traversal (DFS Traversal)
@@ -527,6 +529,7 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Sliding window examples
 
 # External resources and sources:
+- [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
 - [System design resources](https://github.com/donnemartin/system-design-primer)
 - [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
