@@ -38,7 +38,7 @@
   7) DISTINCT 
   8) ORDER
 
-## HTTP
+## HTTP (HyperText Transfer Protocol)
 ### Methods
 - GET: used to retrieve data, no other effect on the data
 - POST: used to send data to the server (e.g. form)
@@ -55,6 +55,11 @@
 - 500 Internal Server Error: server exception
 - 503 Service Unavailable: server unable to handle the request (temporary)
 - 504 Gateway Timeout: server did not receive a timely response from upstream server
+
+Web service - Component for communication between two devices on a network (client - server)
+API - Application Programming Interface
+RESTful - Representational State Transfer technology 
+  - Make call (http request) from client to server, get an answer (http response) from server
 
 ## UNIX
 - Basic commands: ls, cd, mkdir,touch, cp, mv, rm, pwd, chmod, chown, man
@@ -532,9 +537,10 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
 - [System design resources](https://github.com/donnemartin/system-design-primer)
-- [reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
-- [reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
-- [bfs vs dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
-- [basic graphs](https://www.bogotobogo.com/python/python_graph_data_structures.php)
-- [sorting](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
-- [dijkstras](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+- [Reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
+- [Reddit free study resources](https://www.reddit.com/r/cscareerquestions/comments/e4v755/master_list_of_free_resources/)
+- [Bfs vs Dfs](https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+- [Basic graphs](https://www.bogotobogo.com/python/python_graph_data_structures.php)
+- [Sorting](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
+- [Dijkstras](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+- [Web application architecture {basics}](https://www.scnsoft.com/blog/web-application-architecture)
