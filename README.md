@@ -60,6 +60,9 @@ Web service - Component for communication between two devices on a network (clie
 API - Application Programming Interface
 RESTful - Representational State Transfer technology 
   - Make call (http request) from client to server, get an answer (http response) from server
+  - REST is a way to access resources which lie in a particular environment. For example, you could have a server that could be hosting important documents or pictures or videos. All of these are an example of resources. If a client, say a web browser needs any of these resources, it has to send a request to the server to access these resources. Now REST defines a way on how these resources can be accessed
+    - Stateless
+      - Up to the client to ensure that all the required information is provided to the server. This is required so that server can process the response appropriately. The server should not maintain any sort of information between requests from the client. It's a very simple independent question-answer sequence. The client asks a question, the server answers it appropriately. The client will ask another question. The server will not remember the previous question-answer scenario and will need to answer the new question independently
 
 ## UNIX
 - Basic commands: ls, cd, mkdir,touch, cp, mv, rm, pwd, chmod, chown, man
@@ -544,3 +547,4 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Sorting](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
 - [Dijkstras](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
 - [Web application architecture {basics}](https://www.scnsoft.com/blog/web-application-architecture)
+- [Web services](https://www.guru99.com/restful-web-services.html)
