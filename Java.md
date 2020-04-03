@@ -84,10 +84,41 @@ public float addProduct(Product[] products) {
 }
 ```
 
-## Abtract
+## Abstract
 
+- An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed
+- When an abstract class is subclassed, the subclass usually provides implementations for all of the abstract methods in its parent class. However, if it does not, then the subclass must also be declared abstract.
 - Ensures child classes implement a method. Enforces Inheritance. Enforces method overriding.
-**Fill this in**
+- If a class includes abstract methods, then the class itself must be declared abstract, as in:
+```java
+abstract class GraphicObject {
+    int x, y;
+    ...
+    void moveTo(int newX, int newY) {
+        ...
+    }
+    abstract void draw();
+    abstract void resize();
+}
+
+class Circle extends GraphicObject {
+    void draw() {
+        ...
+    }
+    void resize() {
+        ...
+    }
+}
+
+class Rectangle extends GraphicObject {
+    void draw() {
+        ...
+    }
+    void resize() {
+        ...
+    }
+}
+```
 
 ## Interface
 - Blueprint of a class. Only contains method signatures. (No body!)
@@ -106,6 +137,18 @@ class y implements x {
 }
 ```
 
+## Abstract Classes Compared to Interfaces
+Abstract classes are similar to interfaces. You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation. However, with abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. With interfaces, all fields are automatically public, static, and final, and all methods that you declare or define (as default methods) are public. In addition, you can extend only one class, whether or not it is abstract, whereas you can implement any number of interfaces.
+Which should you use, abstract classes or interfaces?
+Consider using abstract classes if any of these statements apply to your situation: 
+You want to share code among several closely related classes.
+You expect that classes that extend your abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).
+You want to declare non-static or non-final fields. This enables you to define methods that can access and modify the state of the object to which they belong.
+Consider using interfaces if any of these statements apply to your situation: 
+You expect that unrelated classes would implement your interface. For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes.
+You want to specify the behavior of a particular data type, but not concerned about who implements its behavior.
+You want to take advantage of multiple inheritance of type
+
 ## Memory in Java
 
 ** Fill this in **
@@ -116,11 +159,21 @@ class y implements x {
 
 junit, mockito, etc
 
-## String methods
+## Strings
 
-**Strings are immutable in java!**
+#### **String objects are immutable in java!**
+- use == to compare primitive e.g. boolean, int, char etc, while use equals() to compare objects in Java. 
+- == return true if two references are of the same object. The result of equals() method depends on overridden implementation. 
+- For comparing the content of two Strings use equals() instead of == equality operator. 
+- Create string literals rather than new objects (String newStringObj = new String()) <- bad
+    - String newStringLiteral = "yo"; <- good. JVM wont create an entirely new reference if another "yo" is created.
+- Using equalsIgnoreCase() is faster than using toUpperCase() or toLowerCase().equals()
 
-Just look these up im not listing them all 
+#### StringBuffer vs StringBuilder
+StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.
+StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously.
+StringBuffer is less efficient than StringBuilder.
+StringBuilder is more efficient than StringBuffer
 
 ```java
 String demoString = "yo";
