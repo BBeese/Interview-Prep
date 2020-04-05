@@ -1,16 +1,77 @@
 [ Need to add - Super, ArrayList vs Vector, StringBuffer vs StringBuilder,
 
 ## Primitive Data Types:
-- Byte      
-- Short
-- Boolean
-- Char
-- Int       
-- Long      
-- Double
-- Float
+- byte      
+- short
+- boolean
+- char
+- int       
+- long      
+- double
+- float
 
-Non-primitive data types do not explicitly contain the value, instead is just a reference (Kind of like a pointer)
+Simple type casting:
+```java
+System.out.println((int)(99.9999)); // Prints 99
+```
+
+int vs Integer: int is a primitive data type in java - Integer is a wrapper class, that wraps around int to create an object. Integer is used in converting an int to an object, an object into an int. 
+
+Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
+```java
+int twentyInt = Integer.parseInt("20"); 
+```
+
+2d Lists:
+```java
+List<List<String>> listOfLists = new ArrayList<List<String>>(size);
+```
+
+ArrayLists:
+```java
+List<String> cars = new ArrayList<String>();
+cars.add("Volvo");
+System.out.prinln(cars.get(0));
+```
+Vector is the thread-safe version of ArrayList.
+
+HashMap:
+```java
+HashMap<String, Integer> wordCount = new HashMap<String, Integer>();
+wordCount.put("Like", "100");
+int likeValue = wordCount.get("Like");
+
+// Iterate through hashMap
+for (String i : wordCount.keySet()) {
+      System.out.println(i);
+}
+```
+
+Set:
+```java
+Set<Integer> a = new HashSet<Integer>();
+Set<Integer> b = new HashSet<Integer>();
+a.addAll(Arrays.asList(new Integer[] {1, 3, 2, 4, 8, 9, 0}));
+b.addAll(Arrays.asList(new Integer[] {1, 3, 7, 5, 4, 0, 7, 5}));
+
+// To find union 
+Set<Integer> union = new HashSet<Integer>(a); 
+union.addAll(b); 
+System.out.print("Union of the two Set"); 
+System.out.println(union); 
+
+// To find intersection 
+Set<Integer> intersection = new HashSet<Integer>(a); 
+intersection.retainAll(b); 
+System.out.print("Intersection of the two Set"); 
+System.out.println(intersection); 
+
+// To find the symmetric difference 
+Set<Integer> difference = new HashSet<Integer>(a); 
+difference.removeAll(b); 
+System.out.print("Difference of the two Set"); 
+System.out.println(difference);
+```
 
 ## Access Specifiers
 **Add some extra clarification here**
@@ -180,8 +241,7 @@ String demoString = "yo";
 int demoStringLength = demoString.length();
 ```
 
-## Collections; Listiterator, arraylist, Map
-
-## Set, Hashset, Treeset (Maybe)
+## Collections
+[Good Explanation](https://www.javatpoint.com/collections-in-java)
 
 ## Streams
