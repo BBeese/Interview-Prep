@@ -1,5 +1,3 @@
-[ Need to add - Super, ArrayList vs Vector, StringBuffer vs StringBuilder,
-
 ## Primitive Data Types:
 - byte      
 - short
@@ -245,3 +243,14 @@ int demoStringLength = demoString.length();
 [Good Explanation](https://www.javatpoint.com/collections-in-java)
 
 ## Streams
+
+## Acronyms 
+- JPA: Java Persistence API
+- JVM: Java Virtual Machine
+- MVC: Model-View-Controller
+    -  Design pattern for relating the user interface to underlying data models.
+- ORM: Object Relational Mapping
+    - Maps classes to DB tables
+    - Maps instance variables to columns
+    - Maps objects to rows in the table
+    - DB independent

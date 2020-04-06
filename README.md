@@ -19,7 +19,13 @@
 - ORM vs ODM - Object Relational Mapper vs Object Document Mapper
 - SQL vs noSQL (non SQL) databases - MongoDB uses objects, non-relational database
 	- Relational databases use relations (typically called tables) to store data and then match that data by using common characteristics within the dataset
-	- All noSQL documents are JSON documents, which are complete entities that one can readily read and understand. Ease of use, scalable, wide availability. 
+	- All noSQL documents are JSON documents, which are complete entities that one can readily read and understand. Ease of use, scalable, wide availability.
+    - Flexible, no forced schemas
+    - Highly scalable, noSQL systems tend to have less features and are better performing and lightweight
+
+### DB concepts
+- ACID: Atomocity, Consistency, Isolation, Durability
+- BASE: Basically Available, Soft-state, Eventual consistency
   
   
 ## SQL
@@ -93,6 +99,8 @@ RESTful - Representational State Transfer technology
 
 # Object Oriented Programming (OOP)
 ##### *DRY: Dont Repeat Yourself!*
+
+- Super - reference parent class methods/attributes
 
 **Polymorphism** - one thing in many forms. Basically polymorphism is capability of one object to behave in multiple ways. Example : A man role changes at home, college, and outside the home.
 
@@ -409,22 +417,23 @@ def binSearch(nums, value):
 
 **(BFS) BreadthFirstSearch:** - Or, "Level-Order Traversal", row based search. Horizontal. QUEUE.
 ```python
-def bfs(root):
-  if root == None:
-    return
+def levelOrderSearch(root):
+  ret = []   
+  level = [root]
   
-  q = Queue()
-  q.enque(root)
-  payload = []
-
-  while not (q.isEmpty):
-    node = q.deque()
-    payload.insert(0, node.value)
-    if node.left: 
-      q.enque(node.left)
-    elif node.right():
-      q.enque(node.right)
-
+  while root and level:
+      currentNodes = []
+      nextLevel = []
+      for node in level:
+          currentNodes.append(node.val)
+          if node.left:
+              nextLevel.append(node.left)
+          if node.right:
+              nextLevel.append(node.right)
+      ret.append(currentNodes)
+      level = nextLevel
+        
+  return ret
 ```
 
 ### When to use:
@@ -464,6 +473,29 @@ def bfs(root):
             res = res + self.PostorderTraversal(root.right)
             res.append(root.data)
         return res
+```
+Java Inorder traversal - Iterative
+```java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+    List<Integer> list = new ArrayList<Integer>();
+
+    Stack<TreeNode> stack = new Stack<TreeNode>();
+    TreeNode cur = root;
+
+    while(cur!=null || !stack.empty()){
+        while(cur!=null){
+            stack.add(cur);
+            cur = cur.left;
+        }
+        cur = stack.pop();
+        list.add(cur.val);
+        cur = cur.right;
+    }
+
+    return list;
+  }
+}
 ```
 
 ### When to use:
@@ -520,6 +552,7 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - Where do you see yourself in 5 years? 
 - Tell me about a time you made a mistake and how did you resolve it?
 - Tell me about something you did at work you are proud of?
+- Tell us about an interesting problem you have worked on recently?
 
 # Things to work on: 
 - map, reduce, filter in python
