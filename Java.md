@@ -212,6 +212,11 @@ You want to take advantage of multiple inheritance of type
 
 ** Fill this in **
 
+## Garbage collection
+- Main objective of Garbage Collector is to free heap memory by destroying unreachable objects.
+- An object is said to be eligible for GC(garbage collection) iff it is unreachable. In above image, after i = null; integer object 4 in heap area is eligible for garbage collection.
+
+
 ## Testing in Java
 
 ** Fill this in ** 
