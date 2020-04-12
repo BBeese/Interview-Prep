@@ -432,7 +432,7 @@ def levelOrderSearch(root):
               nextLevel.append(node.right)
       ret.append(currentNodes)
       level = nextLevel
-        
+      
   return ret
 ```
 
@@ -556,18 +556,16 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 
 # Things to work on: 
 - map, reduce, filter in python
-- cloud with python 
 - refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
-- refresh Java
 - Coding questions:
-  - Permutations/Combinations/Partitions
   - LinkedList manipulations
   - Graph/Tree manipulations
   - Dynamic programming examples
-  - Matrix traversals
+  - Backtracking examples
   - Best/fastest route from a to b
   - Sliding window examples
+  - Permutations/Combinations/Partitions
 
 # External resources and sources:
 - [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
