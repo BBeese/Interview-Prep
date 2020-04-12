@@ -54,6 +54,23 @@ def inorderTraversal(self, root):
         res.append(node.val)
         root = node.right
 
+def isValidBST(self, root: TreeNode) -> bool:
+    if not root: 
+        return True
+    stack = []
+    pre = None
+    while root or stack != []:
+        while root:
+            stack.insert(0, root)
+            root = root.left
+        root = stack.pop(0)
+        if pre and root.val <= pre.val:
+            return False
+        pre = root
+        root = root.right
+    
+    return True
+
 # https://leetcode.com/problems/permutations/discuss/18237/My-AC-simple-iterative-javapython-solution
 def permute(self, nums):
     perms = [[]]   
