@@ -94,3 +94,22 @@ def maxArea(self, height: List[int]) -> int:
         else:
             r -= 1
     return maxA
+
+# Sliding window
+def lengthOfLongestSubstring(self, s: str) -> int:
+
+        j = 0
+        i = 0
+        ans = 0
+        foundNums = set()
+        while j < len(s) and i < len(s):
+            if s[j] not in foundNums:
+                foundNums.add(s[j])
+                j += 1
+                ans = max(ans, j-i)
+            else:
+                foundNums.remove(s[i])
+                i += 1
+    
+        return ans
+    

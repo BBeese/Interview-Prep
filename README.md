@@ -564,7 +564,6 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Dynamic programming examples
   - Backtracking examples
   - Best/fastest route from a to b
-  - Sliding window examples
   - Permutations/Combinations/Partitions
 
 # External resources and sources:
