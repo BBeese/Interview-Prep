@@ -581,6 +581,12 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Best/fastest route from a to b
   - Permutations/Combinations/Partitions
 
+# Leetcode-y problem solving strategies:
+  - Sliding window 
+  - Dynamic Programming (with cache)
+  - Two Pointers
+  - HashMap
+
 # External resources and sources:
 - [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
