@@ -112,4 +112,43 @@ def lengthOfLongestSubstring(self, s: str) -> int:
                 i += 1
     
         return ans
+
+# Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+class MinStack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, x):
+        if not self.stack:
+            self.stack.append((x,x)) 
+        else:
+           self.stack.append((x,min(x,self.stack[-1][1])))
+
+    def pop(self):
+        if self.stack: 
+            self.stack.pop()
+
+    def top(self):
+        if self.stack: 
+            return self.stack[-1][0]
+        return None
+
+    def getMin(self):
+        if self.stack: return self.stack[-1][1]
+        else: return None
     
+# Peak / Valley
+def maxProfit(prices):
+        i = 0
+        maxProfit = 0
+        valley, peak = prices[0]
+        length = len(prices) - 1
+        while (i < length:
+            while (i < length and prices[i] >= prices[i + 1]):
+                i += 1
+            valley = prices[i]
+            while (i < length and prices[i] <= prices[i + 1]):
+                i += 1
+            peak = prices[i]
+            maxProfit += peak - valley
+        return maxProfit
