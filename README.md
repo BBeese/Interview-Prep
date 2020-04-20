@@ -580,6 +580,13 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Backtracking examples
   - Best/fastest route from a to b
   - Permutations/Combinations/Partitions
+- Leetcode Q's to revisit:
+  ### EASY
+  - Invert Binary Tree
+  - Rotate Array
+  - Subtree of Another Tree
+  - Can Place Flowers (All dynamic programming probs tbh)
+  - Non-decreasing array
 
 # Leetcode-y problem solving strategies:
   - Sliding window 
