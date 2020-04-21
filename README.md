@@ -580,6 +580,8 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Backtracking examples
   - Best/fastest route from a to b
   - Permutations/Combinations/Partitions
+  - Sliding window -- 'Longest Continuous Increasing Subsequence'
+
 - Leetcode Q's to revisit:
   ### EASY
   - Invert Binary Tree
@@ -587,6 +589,8 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Subtree of Another Tree
   - Can Place Flowers (All dynamic programming probs tbh)
   - Non-decreasing array
+  - Trim a Binary Search Tree
+  ### MEDIUM
 
 # Leetcode-y problem solving strategies:
   - Sliding window 
