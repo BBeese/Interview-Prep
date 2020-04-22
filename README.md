@@ -591,6 +591,7 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Non-decreasing array
   - Trim a Binary Search Tree
   ### MEDIUM
+  - Find Peak Element
 
 # Leetcode-y problem solving strategies:
   - Sliding window 
