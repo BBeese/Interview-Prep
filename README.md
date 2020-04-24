@@ -184,6 +184,22 @@ print(c.getName())
 # Toyota Corolla
 ```
 
+**Aggregation** - Object contains another object as an attribute. 'HAS A' relationship
+```java
+{ 
+  id: int
+  name: String
+  address: Address
+}
+```
+
+**Association** - Object method uses another object. 'USES A' relationship
+```java
+  public int calculate(params) {
+    BillCalculator b = new BillCalculator();
+  }
+```
+
 # Data Structures:
 
 **Array:**  a collection with specified size 
