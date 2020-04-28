@@ -586,6 +586,8 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - Tell us about an interesting problem you have worked on recently?
 
 # Things to work on: 
+- SQL/Databases refresh
+- Basic data structures, trade offs (dictionary good for lookup, linkedlist deletion, etc)
 - map, reduce, filter in python
 - refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
@@ -630,3 +632,4 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Dijkstras](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
 - [Web application architecture {basics}](https://www.scnsoft.com/blog/web-application-architecture)
 - [Web services](https://www.guru99.com/restful-web-services.html)
+- [RESTful API's](https://searchapparchitecture.techtarget.com/definition/RESTful-API)
