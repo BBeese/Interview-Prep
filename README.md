@@ -104,66 +104,38 @@ RESTful - Representational State Transfer technology
 
 # Object Oriented Programming (OOP)
 
-Best Practices (going to comb thru this and clean it up)
-DRY (Don’t Repeat Yourself). This is the core concept in Java. You should never have two blocks of identical code in two different places. Instead, have one method you use for different applications.
+## Best Practices 
+**DRY (Don’t Repeat Yourself)** - Should never have two blocks of identical code in two different places. Instead, have one method you use for different applications.
 If you expect your Java code to change in the future, encapsulate it by making all variables and methods private at the outset. As the code changes, increase access to “protected” as needed, but not too public.
-Single Responsibility. Another best practice for OOP concepts in Java is the Single Responsibility Principle. Simply put, a class should always have only one functionality. That way, it can be called and/or extended on its own when new uses arise for it, without causing coupling between different functionalities.
-Open Closed Design. Make all methods and classes Closed for modification but Open for an extension. That way, tried and tested code can remain static but can be modified to perform new tasks as needed.
-##### *DRY: Dont Repeat Yourself!*
+**Single Responsibility Principle** -  Simply put, a class should always have only one functionality. That way, it can be called and/or extended on its own when new uses arise for it, without causing coupling between different functionalities.
+**Open Closed Design** - Make all methods and classes closed for modification but open for an extension. That way, tried and tested code can remain static but can be modified to perform new tasks as needed.
 
 - Super - reference parent class methods/attributes
 
-**Polymorphism** - one thing in many forms. Basically polymorphism is capability of one object to behave in multiple ways. Example : A man role changes at home, college, and outside the home.
-
-Reference to a parent class to affect an object in the child class. We might create a class called “horse” by extending the “animal” class. That class might also implement the “professional racing” class. The “horse” class is “polymorphic,” since it inherits attributes of both the “animal” and “professional racing” class.
+**Polymorphism** - One thing in many forms. Basically polymorphism is capability of one object to behave in multiple ways.
+  - Method Overloading: Same method name, different parameters, method behaves differently based on input.
+  - Method Overriding: Redefining the method in a child class. Overwriting previously defined method. 
 
 ```Python
 class Animal:
-	def __init__(self, name):
-		self.name = name
+	...
 	
 class Cat(Animal):
-	def __init__(self):
-		super().__init__(self)
-		
 	def talk(self):
 		return ("meow")
 		
 class Dog(Animal):
 	def talk(self):
-        return ("ruff")
+    return ("ruff")
 ```
 
 **Encapsulation** - Encapsulation refers to binding the data and the code that works on that together in a single unit. Encapsulation also allows data-hiding as the data specified in one class is hidden from other classes. This data is only accessible through public methods. (Getters/Setters) Keeps data secure.
 
 For example, we may create a piece of code that calls specific data from a database. It may be useful to reuse that code with other databases or processes. Encapsulation lets us do that while keeping our original data private. It also lets us alter our original code without breaking it for others who have adopted it in the meantime.
 
-```Python
-class Car:
-	def __init__(self):
-		self.__update_software()
-		
-	def drive(self):
-		print('driving')
-		
-	def __update_software(self):
-		print('updating software')
-		
-c1 = Car()
-c1.drive()
+**Abstraction** - Abstraction means using simple things to represent complexity. We all know how to turn the TV on, but we don’t need to know how it works in order to enjoy it. In Java, abstraction means simple things like objects, classes, and variables represent more complex underlying code and data. This is important because it lets avoid repeating the same work multiple times. Consider your mobile phone, you just need to know what buttons are to be pressed to send a message or make a call, What happens when you press a button, how your messages are sent, how your calls are connected is all abstracted away from the user.
 
-## OUTPUT : updating software \n driving 
-## "__" means private variable 
-```
-
-**Abstraction** - Abstraction means using simple things to represent complexity. We all know how to turn the TV on, but we don’t need to know how it works in order to enjoy it. In Java, abstraction means simple things like objects, classes, and variables represent more complex underlying code and data. This is important because it lets avoid repeating the same work multiple times.
-
-	Abstraction as an OOP concept in Java works by letting programmers create useful, reusable tools. For example, a programmer can create several different types of objects. These can be variables, functions, or data structures. Programmers can also create different classes of objects. These are ways to define the objects.
-	Consider your mobile phone, you just need to know what buttons are to be pressed to send a message or make a call, What happens when you press a button, how your messages are sent, how your calls are connected is all abstracted away from the user.
-
-**Inheritance** - lets programmers create new classes that share some of the attributes of existing classes. This lets us build on previous work without reinventing the wheel.
-
-It works by letting a new class adopt the properties of another. We call the inheriting class a subclass or a child class. The original class is often called the parent. We use the keyword extends to define a new class that inherits properties from an old class
+**Inheritance** - lets programmers create new classes that share some of the attributes of existing classes. This lets us build on previous work without reinventing the wheel. It works by letting a new class adopt the properties of another. We call the inheriting class a subclass or a child class. The original class is often called the parent. We use the keyword extends to define a new class that inherits properties from an old class.
 
 
 ```python 
@@ -580,21 +552,21 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 -  What do you personally like about working here?
 
 ## Behavioral questions 
-- Tell me about yourself.
+- **Tell me about yourself.**
 - **Why do you want to for for X?**
-- What is a time you had a conflict with a team member, and how did you resolve it?
+- **What are your goals/ What are you looking for in a new job?**
+- **Why are you switching jobs?**
 - Tell me about a time when you solved a conflict at work.
 - What is your greatest strength?
 - What is your greatest weakness?
-- **What are your goals?**
 - What was a challenge you had to overcome?
 - Describe a time where you have failed, and what you learned from it
 - What are you actively trying to improve on?
-- **Why are you switching jobs?**
 - Where do you see yourself in 5 years? 
 - Tell me about a time you made a mistake and how did you resolve it?
 - Tell me about something you did at work you are proud of?
-- Tell us about an interesting problem you have worked on recently?
+- Tell me about an interesting problem you have worked on recently?
+- Tell me about a time you took ownership/demonstrated leadership on a project?
 
 # Things to work on: 
 - SQL/Databases refresh
@@ -610,6 +582,7 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Best/fastest route from a to b
   - Permutations/Combinations/Partitions
   - Sliding window -- 'Longest Continuous Increasing Subsequence'
+  - Shortest path from a to b
 
 - Leetcode Q's to revisit:
   ### EASY
