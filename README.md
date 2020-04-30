@@ -1,18 +1,19 @@
 ## Basics 
-- SDLC (Software Development Life Cycle): design, develop, test high quality software
-    + Planning -> Defining -> Designing -> Building -> Testing -> Deployment
-- AGILE : Rapid delivery of a working product, small incremental builds. Useful for rapidly changing requirements
+- Agile : Rapid delivery of a working product, small incremental builds. Useful for rapidly changing requirements
+- Waterfall: Linear, old methodology. Plan -> Design -> Build -> Test -> Deliver
 - C++ is a *low* level languages, Python high
   + Low level languages are close to machine language. Generally more efficient
   + High level languages are easier to understand; more abstraction. More portable
 - A *Compiler* generates an executable (.exe) 
-- OOP: Objects contain variables and methods to store and compute data, and a constructor for initialization purposes. 
-  They can be bound by encapsulation and information hiding to prevent data leaks and can be implemented in other objects with inheritance.
-  Polymorphism can be used to overwrite variables and methods and abstraction can be used to template future instances.
+- OOP: Objects contain variables and methods to store and compute data, and a constructor for initialization purposes. based on objects rather than just functions and procedures
   + Class: basic concept in OOP, bundles data type information with action
   + Hierarchy: classes can have super and subclasses
   + An *Object* is an instance of a *Class*
-- Functional programming - useful when there are few *things* but more operations. 'State' does not exist.
+  + Why use OOP? 
+    + Reduces complexity
+    + Reduces redundancy (Inheritance)
+    + Flexibility (Polymorphism)
+- Functional/Procedural programming - useful when there are few *things* but more operations. 'State' does not exist.
   - OOP useful when there are more things, with less operations. State exists.
   
 ## Databases 
@@ -27,12 +28,12 @@
 - ACID: Atomocity, Consistency, Isolation, Durability
 - BASE: Basically Available, Soft-state, Eventual consistency
   
-  
 ## SQL
-- Unique Key (FK): Column/Group of columns that identify uniqueness in a row
 - Primary Key (PK) : a unique key, but there can be only one primary key
+- Unique Key (FK): Column/Group of columns that identify uniqueness in a row
 - Foreign Key (FK) : Provides an association between data and 2 tables
-- Outer Join (Left, Right), Inner Join
+  Field that is a PK in another table.
+- Outer Join (Left, Right), Inner Join, Cross Join (Cartesian product; 1-4, 1-5, 1-6, 2-4, 2-5, 2-6, 3-4, 3-5, 3-6)
 
 ### Order of execution:
   1) FROM
@@ -43,6 +44,10 @@
   6) SELECT 
   7) DISTINCT 
   8) ORDER
+
+#### SQL Injection
+- Concept of giving an executable SQL statement inside an unsuspecting form (Username, Email) that will be ran by the underlying database.
+
 
 ## HTTP (HyperText Transfer Protocol)
 ### Methods
@@ -98,6 +103,12 @@ RESTful - Representational State Transfer technology
 - reset: reset current HEAD to a different state (can do --hard or --soft)
 
 # Object Oriented Programming (OOP)
+
+Best Practices (going to comb thru this and clean it up)
+DRY (Don’t Repeat Yourself). This is the core concept in Java. You should never have two blocks of identical code in two different places. Instead, have one method you use for different applications.
+If you expect your Java code to change in the future, encapsulate it by making all variables and methods private at the outset. As the code changes, increase access to “protected” as needed, but not too public.
+Single Responsibility. Another best practice for OOP concepts in Java is the Single Responsibility Principle. Simply put, a class should always have only one functionality. That way, it can be called and/or extended on its own when new uses arise for it, without causing coupling between different functionalities.
+Open Closed Design. Make all methods and classes Closed for modification but Open for an extension. That way, tried and tested code can remain static but can be modified to perform new tasks as needed.
 ##### *DRY: Dont Repeat Yourself!*
 
 - Super - reference parent class methods/attributes
@@ -123,7 +134,7 @@ class Dog(Animal):
         return ("ruff")
 ```
 
-**Encapsulation** - a mechanism of binding the data and methods into a single unit known as class. Encapsulation provides a way for abstraction. In OOP the encapsulation is mainly achieved by creating classes, the classes expose public methods and properties. The class is kind of a container or capsule or a cell, which encapsulate the set of methods, attribute and properties to provide its indented functionalities to other classes
+**Encapsulation** - Encapsulation refers to binding the data and the code that works on that together in a single unit. Encapsulation also allows data-hiding as the data specified in one class is hidden from other classes. This data is only accessible through public methods. (Getters/Setters) Keeps data secure.
 
 For example, we may create a piece of code that calls specific data from a database. It may be useful to reuse that code with other databases or processes. Encapsulation lets us do that while keeping our original data private. It also lets us alter our original code without breaking it for others who have adopted it in the meantime.
 
