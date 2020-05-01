@@ -555,10 +555,12 @@ Divide problem into smaller subproblems - NO storing solution of each subproblem
 Divide problem into smaller subproblems - Stores solution of each subproblem. Each subproblem IS dependent on the other.
 
 ## Questions to ask Interviewer 
--  Mentorship? Onboarding? 
--  What does a typical day look like?
--  Can you tell me about the team I'll be working with?
--  What do you personally like about working here?
+- Mentorship? 
+- What does a typical day look like?
+- Turnover question/ upward mobility possibilities?
+- Can you tell me about the team I'll be working with?
+- What do you personally like about working here?
+- Are your teams generally receptive to 'why' questions, or more focused on getting product out?
 
 ## Behavioral questions 
 - **Tell me about yourself.**
@@ -578,20 +580,14 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - Tell me about a time you took ownership/demonstrated leadership on a project?
 
 # Things to work on: 
-- SQL/Databases refresh
-- Basic data structures, trade offs (dictionary good for lookup, linkedlist deletion, etc)
-- map, reduce, filter in python
-- refresh data structures & algos
 - maybe another python project. Crypto? Stocks? Election data? Weather across the states? "Only in texas/midwest/florida/literallyeverywhere can you experience all 4 seasons in one day" data project to prove weather is unpredictable everywhere
 - Coding questions:
-  - LinkedList manipulations
   - Graph/Tree manipulations
   - Dynamic programming examples
   - Backtracking examples
   - Best/fastest route from a to b
   - Permutations/Combinations/Partitions
   - Sliding window -- 'Longest Continuous Increasing Subsequence'
-  - Shortest path from a to b
 
 - Leetcode Q's to revisit:
   ### EASY
