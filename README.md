@@ -186,16 +186,23 @@ print(c.getName())
 # Data Structures:
 
 **Array:**  a collection with specified size 
+- Good for access. Direct indexing
+- Bad for deletion
 ```python
-ar = [] #better never forget this 
+ar = [] 
 ```
 
 **Hashing:** a function mapping an object to an integer such that if a==b, H(a)==H(b). A dictionary in python 
+- Good for inserting and deleting: O(1)
+- Direct access: O(1)
 ```python
-d = {} #better never forget this either 
+d = {}  
 ```
 
 **LinkedList:**  a collection of nodes where each node has a value and a reference
+- Good for insertion
+- Good for deletion
+- Bad for acess; No direct access, only sequential
 ```python
 
 class Link (object):
@@ -303,6 +310,8 @@ class Queue (object):
  ```
 
 **BST (Binary Search Tree):** nodes connected by edges. Left node smaller than right. A node with no child is typically called a leaf node. [Twitter username validation]
+- Good for insertion
+- Good for searching
 ```python
 class Node (object):
   def __init__ (self, data):
