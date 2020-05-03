@@ -622,3 +622,4 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Web application architecture {basics}](https://www.scnsoft.com/blog/web-application-architecture)
 - [Web services](https://www.guru99.com/restful-web-services.html)
 - [RESTful API's](https://searchapparchitecture.techtarget.com/definition/RESTful-API)
+- [Dynamic Programming - Shortest path algorithm](https://www.youtube.com/watch?v=ItjZdu6jEMs&t=388s)
