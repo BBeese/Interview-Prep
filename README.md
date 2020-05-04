@@ -136,6 +136,9 @@ For example, we may create a piece of code that calls specific data from a datab
 **Abstraction** - Abstraction means using simple things to represent complexity. We all know how to turn the TV on, but we don’t need to know how it works in order to enjoy it. In Java, abstraction means simple things like objects, classes, and variables represent more complex underlying code and data. This is important because it lets avoid repeating the same work multiple times. Consider your mobile phone, you just need to know what buttons are to be pressed to send a message or make a call, What happens when you press a button, how your messages are sent, how your calls are connected is all abstracted away from the user.
 
 **Inheritance** - lets programmers create new classes that share some of the attributes of existing classes. This lets us build on previous work without reinventing the wheel. It works by letting a new class adopt the properties of another. We call the inheriting class a subclass or a child class. The original class is often called the parent. We use the keyword extends to define a new class that inherits properties from an old class.
+- Single inheritance: A child inherits from a parent.
+- Multilevel inheritance: A child class inherits from a parent, who themselves inherited from a parent, etc.
+- Hybrid inheritance: More than one subclass beneath a single parent class.
 
 
 ```python 
