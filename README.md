@@ -138,7 +138,7 @@ For example, we may create a piece of code that calls specific data from a datab
 **Inheritance** - lets programmers create new classes that share some of the attributes of existing classes. This lets us build on previous work without reinventing the wheel. It works by letting a new class adopt the properties of another. We call the inheriting class a subclass or a child class. The original class is often called the parent. We use the keyword extends to define a new class that inherits properties from an old class.
 - Single inheritance: A child inherits from a parent.
 - Multilevel inheritance: A child class inherits from a parent, who themselves inherited from a parent, etc.
-- Hybrid inheritance: More than one subclass beneath a single parent class.
+- Hierarchical Inheritance: More than one subclass beneath a single parent class.
 
 
 ```python 
