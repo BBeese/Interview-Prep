@@ -611,6 +611,10 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Binary Search
   - Stack/Queue
   - Increment/Decrement hash table (d = {x: 1} , d[x] += 1 if x appears, d[x] -= 1 if x doesnt appear)
+  - BFS
+  - DFS
+  - Sorting 
+  - Binary search
 
 # External resources and sources:
 - [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
