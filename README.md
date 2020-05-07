@@ -631,3 +631,4 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [RESTful API's](https://searchapparchitecture.techtarget.com/definition/RESTful-API)
 - [Dynamic Programming - Shortest path algorithm](https://www.youtube.com/watch?v=ItjZdu6jEMs&t=388s)
 - [AGILE](https://www.whizlabs.com/blog/agile-interview-questions-answers/)
+- [SSIS, SSRS, SSAS {Database/SQL server}](https://smallbusiness.chron.com/difference-between-microsoft-ssrs-ssis-ssas-34689.html)
