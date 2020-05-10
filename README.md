@@ -15,6 +15,8 @@
     + Flexibility (Polymorphism)
 - Functional/Procedural programming - useful when there are few *things* but more operations. 'State' does not exist.
   - OOP useful when there are more things, with less operations. State exists.
+- Pointer - Variable storing the memory address of another variable.
+
   
 ## Databases 
 - ORM vs ODM - Object Relational Mapper vs Object Document Mapper
@@ -111,6 +113,8 @@ If you expect your Java code to change in the future, encapsulate it by making a
 **Open Closed Design** - Make all methods and classes closed for modification but open for an extension. That way, tried and tested code can remain static but can be modified to perform new tasks as needed.
 
 - Super - reference parent class methods/attributes
+
+- Constructor - method that initializes a class. 
 
 **Polymorphism** - One thing in many forms. Basically polymorphism is capability of one object to behave in multiple ways.
   - Method Overloading: Same method name, different parameters, method behaves differently based on input.
@@ -568,6 +572,7 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 ## Behavioral questions 
 - **Tell me about yourself.**
 - **Why do you want to for for X?**
+- **Why should we hire YOU?**
 - **What are your goals/ What are you looking for in a new job?**
 - **Why are you switching jobs?**
 - Tell me about a time when you solved a conflict at work.
