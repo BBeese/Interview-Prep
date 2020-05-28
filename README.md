@@ -1,5 +1,5 @@
 ## Basics 
-- Agile : Rapid delivery of a working product, small incremental builds. Useful for rapidly changing requirements
+- Agile : Project management style, small incremental work sequences. Useful for rapidly changing requirements
 - Waterfall: Linear, old methodology. Plan -> Design -> Build -> Test -> Deliver
 - C++ is a *low* level languages, Python high
   + Low level languages are close to machine language. Generally more efficient
@@ -635,5 +635,8 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Web services](https://www.guru99.com/restful-web-services.html)
 - [RESTful API's](https://searchapparchitecture.techtarget.com/definition/RESTful-API)
 - [Dynamic Programming - Shortest path algorithm](https://www.youtube.com/watch?v=ItjZdu6jEMs&t=388s)
-- [AGILE](https://www.whizlabs.com/blog/agile-interview-questions-answers/)
+- [AGILE basics](https://linchpinseo.com/the-agile-method/)
+- [AGILE interview questions](https://www.whizlabs.com/blog/agile-interview-questions-answers/)
 - [SSIS, SSRS, SSAS {Database/SQL server}](https://smallbusiness.chron.com/difference-between-microsoft-ssrs-ssis-ssas-34689.html)
+- [Leetcode study link](https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews)
+- [Interview Cake (pretty good study materials)](https://www.interviewcake.com/)
