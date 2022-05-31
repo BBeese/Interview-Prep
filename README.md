@@ -602,20 +602,9 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Permutations/Combinations/Partitions
   - Sliding window -- 'Longest Continuous Increasing Subsequence'
 
-- Leetcode Q's to revisit:
-  ### EASY
-  - Invert Binary Tree
-  - Rotate Array
-  - Subtree of Another Tree
-  - Can Place Flowers (All dynamic programming probs tbh)
-  - Non-decreasing array
-  - Trim a Binary Search Tree
-  ### MEDIUM
-  - Find Peak Element
-
 # Leetcode-y problem solving strategies:
   - Sliding window 
-  - Dynamic Programming (with cache)
+  - Dynamic Programming / Backtracking (with memoization)
   - Two Pointers (fast/slow, beginning/end)
   - HashMap
   - Binary Search
@@ -625,6 +614,11 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - DFS
   - Sorting 
   - Binary search
+  - Trie
+  - Heap / Priority Queue
+  - Merges
+  - Intervals
+  - Graph
 
 # External resources and sources:
 - [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
