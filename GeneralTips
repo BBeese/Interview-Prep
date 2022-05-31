@@ -1,0 +1,46 @@
+CODING:
+
+THINK OUT LOUD!
+  Before writing any code, outline:
+	1) Observations
+	2) Cases to Consider
+	3) Ideas (DFS, Hashmap, etc)
+  
+Talk through your ideas - validate your assumptions BEFORE you start writing any code (many are huge sticklers for this and will claim you have poor problem solving skills if you jump right into coding).
+If you can think of both a non optimal solution and an optimal one walk them through the first one and the second one 
+“the first thing that comes to mind is doing this with nested for loops — the time complexity would be quadratic so maybe a better way is to use some auxiliary data structure - I think a hashmap could help since it allows me to keep track of bla bla”
+
+DONT AUTOMATICALLY OVERCOMPLICATE THE QUESTION! THINK ABOUT THE PROBLEM BEFORE BEGINNING WRITING CODE
+
+SYSTEM DESIGN: 
+	1) CLARIFYING QUESTIONS
+	2) SYSTEMATIC APPROACH (HOW WILL I TACKLE THIS) THINK OUT LOUD
+	
+	- scalability
+	- use cases
+	- gather requirements, whatever i need to, then begin my process
+  
+  Input, Processing, DataStore, Processing/Output
+
+Grokking system design
+Solid principles. Low level design of file system.
+Singleton, Factory, and Strategy
+Start with URL shortener and go all the way upto Twitter. Learn concepts, understand CAP theorem. Design comes by practice.
+SOLID design? seperation of concerns
+
+Practice the most common system design questions: news feed(twitter feed, news feed, facebook feed, tiktok feed), 
+chat systems(whatsapp, facebook messenger), 
+cloud storage(dropbox, google drive), 
+video upload(youtube, tiktok), video streaming, etc.
+design a parking lot, hotel, tinyurl, fb, whatsapp, uber, etc.
+Go to the OOD section of leetcode and check the comments. This was probably the hardest(at least it was for me). You can know the design patterns but to identify which one you should use is more difficult, it usually comes with experience.
+
+TOPICS:
+	 - load balancer - distribute incoming requests to server or DB
+	 - sharding - distribute data across db's, each db handles a certain subset 
+		- faster performance/queries
+		- more complex sql logic 
+		- joining data complexity 
+		- overall complexity
+		
+	- latency v throughput
