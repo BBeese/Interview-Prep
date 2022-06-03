@@ -635,3 +635,4 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Dynamic Programming - Shortest path algorithm](https://www.youtube.com/watch?v=ItjZdu6jEMs&t=388s)
 - [SSIS, SSRS, SSAS {Database/SQL server}](https://smallbusiness.chron.com/difference-between-microsoft-ssrs-ssis-ssas-34689.html)
 - [Leetcode study link](https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews)
+- [Senior Engineer Job Search](https://www.jobsearch.dev/)
