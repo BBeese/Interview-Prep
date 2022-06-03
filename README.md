@@ -621,7 +621,6 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
   - Graph
 
 # External resources and sources:
-- [Behavioral question tips](https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling)
 - [Tons of interview questions, specific to language/frameworks](https://www.onlineinterviewquestions.com/programming/)
 - [System design resources](https://github.com/donnemartin/system-design-primer)
 - [Reddit CS interview guide](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
@@ -634,8 +633,5 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [Web services](https://www.guru99.com/restful-web-services.html)
 - [RESTful API's](https://searchapparchitecture.techtarget.com/definition/RESTful-API)
 - [Dynamic Programming - Shortest path algorithm](https://www.youtube.com/watch?v=ItjZdu6jEMs&t=388s)
-- [AGILE basics](https://linchpinseo.com/the-agile-method/)
-- [AGILE interview questions](https://www.whizlabs.com/blog/agile-interview-questions-answers/)
 - [SSIS, SSRS, SSAS {Database/SQL server}](https://smallbusiness.chron.com/difference-between-microsoft-ssrs-ssis-ssas-34689.html)
 - [Leetcode study link](https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews)
-- [Interview Cake (pretty good study materials)](https://www.interviewcake.com/)
