@@ -636,3 +636,5 @@ Divide problem into smaller subproblems - Stores solution of each subproblem. Ea
 - [SSIS, SSRS, SSAS {Database/SQL server}](https://smallbusiness.chron.com/difference-between-microsoft-ssrs-ssis-ssas-34689.html)
 - [Leetcode study link](https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews)
 - [Senior Engineer Job Search](https://www.jobsearch.dev/)
+- [NEETCODE](https://neetcode.io/)
+- [GRIND75](https://www.techinterviewhandbook.org/grind75)
