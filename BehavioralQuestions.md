@@ -61,3 +61,5 @@ QUESTIONS:
 
 - Describe a problem you encountered a complex problem and implemented a simple solution
 
+LINKS:
+[Good general behavioral interview tips]([https://duckduckgo.com](https://www.scarletink.com/interviewing-at-amazon-leadership-principles/?fbclid=IwAR12GcEP1A9Ye_dj3ZtxJ8ErD_XAE9O2CyXaCwtkfiwlfWYttYAQDKsYzsA)).
